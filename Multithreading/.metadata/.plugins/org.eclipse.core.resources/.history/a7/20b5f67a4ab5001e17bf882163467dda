@@ -1,0 +1,48 @@
+package aa.com.waith.notify;
+
+class A implements Runnable{
+
+	@Override
+	public void run() {
+	   for( int i=1; i<=
+			   10; i++){
+		 if(i%2==0) {
+			 PrintTat.printMessage(i);
+		 }
+		   
+	   }
+		
+	}
+}
+
+class B implements Runnable {
+	
+	@Override
+	public void run() {
+		for(int i=1; i<=10; i++) {
+			
+			if(i%2!=0) {
+				PrintTat.printMessage(i);
+			}
+		}
+	}
+}
+
+
+class PrintTat {
+
+	public static synchro
+	nized void printMessage(int i) {
+		System.out.println("evenNumber: "+i);
+	}
+	
+}
+
+public class Test {
+	public static void main(String[] args) {
+		System.out.println("main Start: ");
+      new Thread(new A()).start();
+      new Thread(new B()).start();
+    
+	}
+}

@@ -1,0 +1,26 @@
+package aa.collection.sun.collection;
+
+enum FoodIteam{
+	IDELY(40),DOSA(40),PURI(30),BONDA(50),PONGAL(30),UPMA(30);
+	
+	private  double price;
+	
+	private FoodIteam(double price) {
+		this.price =price;
+	}
+	
+	public double price() {
+		return price;
+	}
+	
+}
+public class Test08_Set_EnumSet {
+
+	public static void main(String[] args) {
+		
+		System.out.println(FoodIteam.IDELY);
+		System.out.println(FoodIteam.DOSA);
+		
+		System.out.println("s.no\t name \t price");
+	}
+}

@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\OOP\Simple Calculator\.metadata\.plugins\org.eclipse.jdt.core
+773504739.index
+4223385461.index
+1865797976.index

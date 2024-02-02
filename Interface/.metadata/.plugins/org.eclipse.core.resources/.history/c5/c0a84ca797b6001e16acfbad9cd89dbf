@@ -1,0 +1,14 @@
+package aa.abstraction.allfield;
+
+public class Test02 {
+
+	public void m1() {
+		super.x();
+	}
+	public static void main(String[] args) {
+		
+		
+	}
+
+	
+}

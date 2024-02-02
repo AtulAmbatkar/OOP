@@ -1,0 +1,5 @@
+package aa.with.resources;
+
+public class Test02_TryWithResources_Rules {
+
+}

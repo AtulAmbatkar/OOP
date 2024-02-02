@@ -1,0 +1,13 @@
+package aa.collection.sun.collection;
+
+public class AdditionClass_Test15 {
+	
+	public static void main(String[] args) {
+		
+		Addition ad = new AdditionImple();
+		
+		ad.calculate(50,60);
+		ad.calculate(4.2f,7.5f);
+	}
+
+}

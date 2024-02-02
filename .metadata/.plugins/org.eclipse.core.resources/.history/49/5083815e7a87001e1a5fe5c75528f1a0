@@ -1,0 +1,16 @@
+package ppppp;
+
+public class TEST {
+	
+	int x ;
+	{
+		x =10;
+	}
+	
+	public static void main(String[] args) {
+		
+		TEST t = new ();
+		System.out.println(t.x);
+	}
+
+}

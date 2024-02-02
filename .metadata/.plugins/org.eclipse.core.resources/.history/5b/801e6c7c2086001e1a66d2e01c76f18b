@@ -1,0 +1,49 @@
+package aa.exception.handling_rules;
+
+import java.io.BufferedReader;
+// import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class FinalTryWithCatch {
+	
+	static void division() {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		while(true) {
+		try {
+			System.out.print("Enter first Number: ");
+			int a = Integer.parseInt(br.readLine());
+			break;
+		}catch (NumberFormatException npr) {
+			System.out.println("please pass Int value only");
+		}
+	 
+	}
+		while(true) {
+			try {
+				System.out.print(" Enter second number: ");
+				int b = Integer.parseInt(br.readLine());
+				
+				try {
+					int d;
+					int c = d/b;
+					System.out.println("Result: "+c);
+				}catch(ArithmeticException e) {
+					System.out.println("does not enter second value as zero: ");
+					continue;
+				}
+				break;
+			}catch(NumberFormatException e) {
+				System.out.println("enter onle integer value");
+			}
+		}
+	}
+		
+		public static void main(String [] args) {
+			division();
+		}
+
+	
+
+}

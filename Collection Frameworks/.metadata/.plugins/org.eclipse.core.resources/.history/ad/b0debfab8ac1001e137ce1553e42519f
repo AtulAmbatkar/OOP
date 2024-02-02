@@ -1,0 +1,56 @@
+package aa.collection.sun.collection;
+
+public class AdditionClass_Test15 {
+	
+	public static void main(String[] args) {
+		
+		Addition ad = new AdditionImple();
+		
+		ad.calculate(50,60);
+		ad.calculate(4.2f,7.5f);
+		System.out.println();
+		
+//		Approach#2.inner class
+		
+		Addition ad1 = 
+				       new Addition() {
+
+						@Override
+						public void calculate(int a, int b) {
+						    System.out.println("inner Int : " + (a+b));	
+						}
+						
+						@Override
+						public void calculate(float a, float b) {
+							System.out.println("inner float: " + (a+b));
+						}
+			
+		};
+		
+		ad1.calculate(12.4f, 78.3f);
+		ad1.calculate(10,20);
+		System.out.println();
+		
+//		Approach #3.lambdaExpression
+		
+//		Addition ad2 = (a,b)-> {System.out.println("lambda expression: " + (a+b));};
+		Addition ad2 = (a,b) -> System.out.println(a+b);
+		
+		
+		ad2.calculate(10, 20);
+		ad2.calculate(10.5f , 52.2f);
+		ad2.calculate(10.5 , 52.2);
+		
+//		Subtract s1 = (a,b) -> {return (a-b);};
+//        int result = s1.calculate(10,20);
+        
+        Subtract s2 = System.out::println;;   
+        s2.calculate(20, 10);
+        
+//        System.out.println("result: " + result);
+		
+				    		
+	}
+}
+
+

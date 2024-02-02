@@ -1,0 +1,11 @@
+package ppppp;
+
+public class Sample5 {
+	
+	public static void main(String[] args) {
+		
+		
+		Syatem.out.println(101+101);
+	}
+
+}

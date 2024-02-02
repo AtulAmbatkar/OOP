@@ -1,0 +1,5 @@
+package com.nareshit.exceptions;
+
+public class InSufficientFoundsException {
+
+}

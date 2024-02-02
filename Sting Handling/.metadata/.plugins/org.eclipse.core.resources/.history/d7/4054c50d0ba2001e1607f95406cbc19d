@@ -1,0 +1,22 @@
+package aa.stirng.handling;
+import java.util.Arrays;
+
+public class SortingString {
+	public static void main(String[] args) {
+		
+		String s = "How are you?";
+		String[] s1 = s.split(" ");
+//		System.out.println(s1.length);
+//		System.out.println(Arrays.toString(s1));
+//		System.out.println();
+		
+		 for (int i = s1.length - 1; i >= 3; i--) {
+	            // Check bounds before accessing array element
+	            if (i < s1.length && i >= 0) {
+	                String s2 = s1[i];
+	                System.out.println(s2);
+	            }
+	        }
+	}
+
+}

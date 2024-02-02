@@ -1,0 +1,15 @@
+What is encapsulation ? why they are provided in our oop principle?
+
+ - encapsulation is the one of oop principle.
+ - the prosses of wraping up of variables and methods as single unit by using class
+ - & operating those variables only via methods either for reading or modifiting values is called Encapsulation.
+
+ - by developing encapsulation we are hiding data from direct access from other object ; 
+ - and providing those access via publiccly available getter & setter () method with proper validation.
+
+- hence through encapsulation we will get security to object data,reusability,centialised modification to object code.
+
+- 2 types of encapsulatio::: 1.week encapsulation(one private another non private)
+                                                2.strong encapsultion(all member's are private or final.)
+
+

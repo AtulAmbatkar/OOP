@@ -1,0 +1,47 @@
+package encapsulation;
+
+import java.util.InputMismatchException;
+import java.util.Scanner;
+ class BankAccount {
+	private double balance;
+	
+	public void setBalance (double balance) 
+			                       throws IllegalArgumentException {
+		
+		if(balance==0) 
+			    throw new IllegalArgumentException ("Don't pass zero");
+		
+		if(balance < 0)
+			    throw new IllegalArgumentException("Dont'n pass rong value");
+		
+		 this.balance=balance;
+			    
+		}
+	public double getBalance() {      
+		return balance;
+	}
+}
+ public class Bank {
+	 
+	 public static void main(String [ ] args) {
+		 Scanner scn = new Scanner(System.in);
+		 BankAccount ba = new BankAccount();
+		 
+		 while(true) {
+			 try {
+				 System.out.println("Enter number: ");
+				 double balance = scn.nextDouble();
+				 ba.setBalance(balance);
+				 System.out.println("Current balnace: "+ba. getBalance());
+				 
+			 }catch(InputMismatchException e) {
+				 System.out.println("Enter only number");
+				 
+			 }catch(IllegalArgumentException e) {
+				 System.out.println(e.getMessage());
+			 }
+		 }
+		 
+		 
+		 }
+	 }

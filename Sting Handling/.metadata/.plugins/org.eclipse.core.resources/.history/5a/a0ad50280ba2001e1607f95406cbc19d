@@ -1,0 +1,18 @@
+package aa.stirng.handling;
+import java.util.Arrays;
+
+public class SortingString {
+	public static void main(String[] args) {
+		
+		String s = "How are you?";
+		String[] s1 = s.split(" ");
+		System.out.println(s1.length);
+		System.out.println(Arrays.toString(s1));
+    	System.out.println();
+    	
+    	System.out.println(s1[0]);
+		
+		 
+	}
+
+}

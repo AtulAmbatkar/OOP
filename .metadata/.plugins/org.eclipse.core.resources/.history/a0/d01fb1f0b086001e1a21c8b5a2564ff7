@@ -1,0 +1,49 @@
+package aa.with.resources;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.PrintStream;
+
+public class Test02_TryWithResources_Rules {
+	
+	public static void main(String[]args) throws Exception, IOException  {
+		
+
+	//#1.resource's variable and object must be 
+	// Autocloseble type else ce:
+		
+		// try(PrintStream ps = new PrintStream(System.out)){
+		//	ps.println("hello"); }
+		// ps bloct not required check exception 	
+		// bcz ps close() metode PrintSteam in not throws IOException 
+		
+		// try(String s = "hi"){  ce:i.c.t
+		//try(Object obj = new PrintStream(System.out)){ // does not implement ce:i.c.t
+		 
+		// try(AutoCloseable ae = new PrintStream(System.out)){ }  //not ce but ioException is required
+				
+	//#2.if resource's close() method throwing checked exception by handle it
+	// using catch block or main method decleration(or reporthing in main method).
+		try(FileOutputStream fos = new FileOutputStream("a.txt")){ }
+			catch(FileNotFoundException e) { }
+		//	catch(IOException e) { }
+		// here FileNotFoundException throws construcuctor
+	   // FileOutputStream throws IOException
+		
+	//#3.we canot jus decleare the veriable in try block
+		// it must be intialised by using object or method()call or atleast null;
+		// that returns Autocloseable object
+		
+		//try(PrintStream ps){ 
+		//	System.out.println("ps try 1"); } // ce:= veriable initializer
+		
+		try(PrintStream ps = null){
+			System.out.println("in ps try2");
+		}
+		try (PrintStream ps = new PrintStream(System.out)){
+			System.out.println("in ps try3");
+		}
+		
+	     
+	}
+}

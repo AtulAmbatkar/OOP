@@ -1,0 +1,32 @@
+package aa.com.waith.notify;
+
+class A implements Runnable{
+
+	@Override
+	public void run() {
+	   for( int i=1; i<10; i++){
+		 if(i%2==0) {
+			 PrintTat.peingMessage(i);
+		 }
+		   
+	   }
+		
+	}
+}
+
+
+class PrintTat {
+
+	public static void peingMessage(int i) {
+		System.out.println("evenNumber: "+i);
+	}
+	
+}
+
+public class Test {
+	public static void main(String[] args) {
+		
+      new Thread(new A).start();
+    
+	}
+}

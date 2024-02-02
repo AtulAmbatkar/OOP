@@ -1,0 +1,18 @@
+package aa.project.com;
+
+public class Mobile {
+	private Sim sim;
+	
+	public void insertSim(String simName) {
+		
+//		Rplacation  API
+		Class simClass = Class.forName(simName);
+		Object objClass = simClass.newInstance();
+		
+		if(objClass instanceof Sim) {
+			sim = (Sim) objClass;
+	}
+	
+	}
+
+}

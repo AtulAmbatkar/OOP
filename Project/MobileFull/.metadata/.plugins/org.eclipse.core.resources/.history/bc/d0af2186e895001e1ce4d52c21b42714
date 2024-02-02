@@ -1,0 +1,10 @@
+package aa.project.com;
+
+public class Airtel implements Sim {
+	
+	public void m6() {
+		System.out.println("jdnjd");
+	}
+
+	  
+}

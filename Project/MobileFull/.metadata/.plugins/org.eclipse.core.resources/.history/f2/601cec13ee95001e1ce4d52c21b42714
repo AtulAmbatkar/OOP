@@ -1,0 +1,21 @@
+package aa.project.com;
+
+public interface Sim {
+	
+//	abstract void m6(); 
+	default void m1() {
+		System.out.println("hi");
+	}
+	
+	static void m2() {
+		System.out.println("how");
+	}
+	
+	private static void m3() {
+		System.out.println("jnd");
+	}
+
+	private void m5() {
+		System.out.println("jnfkvmkf");
+	}
+}

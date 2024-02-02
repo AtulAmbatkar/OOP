@@ -1,0 +1,5 @@
+package aa.abstraction.allfield;
+
+public interface i1 {
+
+}

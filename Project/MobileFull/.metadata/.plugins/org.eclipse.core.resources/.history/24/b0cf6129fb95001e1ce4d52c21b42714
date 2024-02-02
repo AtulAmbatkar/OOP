@@ -1,0 +1,18 @@
+package aa.project.com;
+
+
+
+public class Airtel implements SIM {
+	
+	 String sendSMS(String sms , long mobileNumber) {
+		
+		return "your SMS sending successfully? ";
+	}
+	
+	 String dialCall(long mobileNumber) {
+		
+		return "Number is busy,so what?";
+	}
+}
+	
+

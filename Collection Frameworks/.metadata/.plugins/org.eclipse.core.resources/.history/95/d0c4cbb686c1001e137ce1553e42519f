@@ -1,0 +1,18 @@
+package aa.collection.sun.collection;
+
+@FunctionalInterface
+public interface Addition {
+	
+	void calculate(int a,int b);
+	
+//	void add(float a, float b);
+	
+	default void calculate(float c, float d) {
+		System.out.println(c+d);
+	}
+	
+	static void calculate(double a, double b) {
+		
+	}
+
+}

@@ -1,0 +1,23 @@
+package paractice.logic.programming;
+
+public class PerfectNumber {
+
+	public static void main(String [] args)
+	{
+		int number = 28, sum ;
+		int i;
+		
+		while( i<number) {
+			
+			if(number % i == 0) 
+			
+				sum = sum + i;
+			      i++;	
+			}
+	 if(sum == number) {
+		System.out.println("Number is perfrrct");
+	}else {
+		System.out.println("Number is not perfecct");
+	}
+ }
+}

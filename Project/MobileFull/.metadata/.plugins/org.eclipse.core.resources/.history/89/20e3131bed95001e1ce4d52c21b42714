@@ -1,0 +1,14 @@
+package aa.project.com;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		Sim a = new Airtel();
+		if(a instanceof Airtel) {
+		   
+			 
+			
+		}
+	}
+}

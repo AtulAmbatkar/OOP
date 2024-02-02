@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+E:\OOP\Sting Handling\.metadata\.plugins\org.eclipse.jdt.core
+29170440.index
+1865797976.index
+1391551357.index
+3702785518.index
+3203920501.index

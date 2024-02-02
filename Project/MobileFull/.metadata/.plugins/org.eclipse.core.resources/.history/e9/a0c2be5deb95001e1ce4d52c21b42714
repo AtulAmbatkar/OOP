@@ -1,0 +1,20 @@
+package aa.project.com;
+
+import java.util.Scanner;
+
+public class Test{
+	
+	 Scanner scn = new Scanner(System.in);
+	
+     int a = scn.nextInt();
+	
+	public static void main(String[] args) {
+		
+		Sim a = new Airtel();
+		a.m6();
+		a.m1();
+	}
+	
+	
+
+}

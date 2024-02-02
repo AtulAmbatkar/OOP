@@ -1,0 +1,12 @@
+package exception.project;
+
+public class NegativeNumberException {
+
+	 NegativeNumberException () {
+		 super();
+	 }
+	 
+	 NegativeNumberException(String message) {
+		 super(message);
+	 }
+}

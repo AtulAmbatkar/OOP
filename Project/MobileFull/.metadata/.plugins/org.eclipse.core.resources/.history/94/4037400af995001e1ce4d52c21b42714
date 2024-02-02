@@ -1,0 +1,29 @@
+
+
+public class Mobile {
+	private SIM sim;
+	
+	public void insertSim(String simName) throws Exception {
+		
+//		Rplacation  API
+		Class simClass = Class.forName(simName);
+		Object objClass = simClass.newInstance();
+		
+		if(objClass instanceof Sim) {
+			sim = (SIM) objClass;
+	    }
+		else {
+			throw new Exception("Sim is not valid");
+		}
+		
+	}
+		
+		public String dialCall(long mobileNumber) {
+			return sim.dialCall(mobileNumber);
+		}
+
+	   public String sendSMS(String msg, long mobileNumber) {
+		 return sim.sendSMS(msg, mobileNumber);
+	   }
+
+}

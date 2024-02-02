@@ -1,0 +1,55 @@
+package aa.collection.serialziable.student;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayList_WithStudent {
+     public static void main(String[] args) {
+		
+    	 ArrayList<Object> al = new ArrayList<>();
+    	 
+    	 Student s1 = new Student();
+    	 Student s2 = new Student();
+    	 Student s3 = new Student();
+    	 Student s4 = new Student();
+    	 
+    	 s1.setSname("joky");
+    	 s1.setSno(101);
+    	 s1.setCourse("CJ");
+    	 s1.setFees(2500);
+    	 
+    	 s2.setSno(102);
+    	 s2.setSname("Rocky");
+    	 s2.setCourse("CJ");
+    	 s2.setFees(2500);
+    	 
+    	 s3.setSno(103);
+    	 s3.setSname("Soky");
+    	 s3.setCourse("CJ");
+    	 s3.setFees(2500);
+    	 
+    	 s4.setSno(104);
+    	 s4.setSname("moky");
+    	 s4.setCourse("CJ");
+    	 s4.setFees(2500);
+    	 
+    	 al.add(s1);
+    	 al.add(s2);
+    	 al.add(s3);
+    	 al.add(s4);
+    	 
+    	 System.out.println(al.size());
+    	 System.out.println(al);
+    	 System.out.println();
+    	 
+    	 System.out.println(al.contains(s3));
+    	 
+    	 s3.setCourse("Oracle");
+    	 
+    	 Object obj = al.indexOf(s3);
+    	 
+    	 Student s = (Student)al.get((int) obj);
+    	 
+    	 System.out.println(s.getSno());
+    	
+     }
+}

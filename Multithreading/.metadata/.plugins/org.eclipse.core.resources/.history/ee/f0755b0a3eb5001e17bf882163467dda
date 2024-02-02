@@ -1,0 +1,34 @@
+package aa.com.waith.notify;
+
+import javax.swing.plaf.synth.SynthOptionPaneUI;
+
+class  MYRunnable1  {
+
+	public synchronized void m1() {
+		
+		System.out.println("hi");
+		try {
+			wait();
+			System.out.println("by");
+		}catch(InterruptedException e) {
+			e.printStackTrace();
+		}
+		
+		notify();
+	}
+	 
+}
+public class Test_33_WaitRules {
+	
+	public static void main(String[] args) throws InterruptedException {
+		
+		MYRunnable1 mr = new MYRunnable1();
+		
+		mr.m1();
+		
+	    System.out.println(("main"));
+		
+		
+	}
+
+}

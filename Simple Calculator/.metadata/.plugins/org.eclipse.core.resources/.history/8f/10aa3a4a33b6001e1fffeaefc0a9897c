@@ -1,0 +1,27 @@
+package season;
+import java.util.Scanner;
+
+public class ConverAsciiValue {
+
+	public static void main(String[] args) {
+		
+	    Scanner scn = new Scanner(System.in);
+	    
+	    try {
+	    	
+	    System.out.print("Enter string : ");
+	    String name = scn.nextLine();	
+	    
+	    byte[] byte = name.getBytes(name);
+	    
+	    }catch(IllegalArgumentException e) {
+	    	System.out.println("valid given me only String ");
+	    }
+	}
+	
+	public static void CheckString(String str) {
+		 if(!str.matches("[a-zA-Z]+")) {
+			  throw new IllegalArgumentException();
+		 }
+	}
+}

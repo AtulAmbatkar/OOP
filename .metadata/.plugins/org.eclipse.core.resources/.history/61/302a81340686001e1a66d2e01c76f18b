@@ -1,0 +1,26 @@
+package aa.exception.handling_rules;
+
+public class Test01{
+	
+	public static void main(String []args ) {
+		// #1.we can try:> catch:> finally
+		try  { }
+	//	finally {};
+		catch(ArithmeticException e) {}
+		
+		finally {}
+		
+		// #2.after final we cannot place the catch block
+		// catch(NumberFormatException e) {}
+		
+		//#3.
+		try {}
+		finally {}
+		
+		try {}
+		catch(ArrayIndexOutOfBoundsException e) {}
+		
+		try {}
+   	}
+	
+}

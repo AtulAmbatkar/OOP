@@ -1,0 +1,21 @@
+package aa.project.com;
+
+import java.util.Scanner;
+
+public class Test{
+	
+	public static void main(String[] args) {
+		
+		Scanner scn = new Scanner(System.in);
+		
+		static int x = scn.nextInt();
+		System.out.println(x);
+		Sim a = new Airtel();
+		a.m6();
+		a.m2();
+		a.m1();
+	}
+	
+	
+
+}

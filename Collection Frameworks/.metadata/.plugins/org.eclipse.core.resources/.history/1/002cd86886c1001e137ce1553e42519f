@@ -1,0 +1,35 @@
+package aa.collection.sun.collection;
+
+public class AdditionClass_Test15 {
+	
+	public static void main(String[] args) {
+		
+		Addition ad = new AdditionImple();
+		
+		ad.calculate(50,60);
+		ad.calculate(4.2f,7.5f);
+		System.out.println();
+		
+//		Aproach#2.iiner class
+		
+		Addition ad1 = 
+				       new Addition() {
+
+						@Override
+						public void calculate(int a, int b) {
+						    System.out.println("inner Int : " + (a+b));	
+						}
+						
+						@Override
+						public void calculate(float a, float b) {
+							System.out.println("inner float: " + (a+b));
+						}
+			
+		};
+		
+		ad1.calculate(12.4f, 78.3f);
+		ad1.calculate(10,20);
+				    		   
+	}
+
+}

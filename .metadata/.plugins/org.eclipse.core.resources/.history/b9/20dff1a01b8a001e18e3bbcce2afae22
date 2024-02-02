@@ -1,0 +1,5 @@
+package exception.project;
+
+public class negativeNumberException {
+
+}

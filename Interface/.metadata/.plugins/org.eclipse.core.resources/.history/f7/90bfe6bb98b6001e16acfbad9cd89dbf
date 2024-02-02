@@ -1,0 +1,16 @@
+package aa.abstraction.allfield;
+
+public class Test02 {
+
+	 public void m() {
+		 super.x();
+	 }
+	public static void main(String[] args) {
+		
+		Test02 ta = new Test02();
+		ta.m();
+		System.out.println("hi");
+	}
+
+	
+}

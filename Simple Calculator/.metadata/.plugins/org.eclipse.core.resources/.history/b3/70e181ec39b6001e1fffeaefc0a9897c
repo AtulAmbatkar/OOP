@@ -1,0 +1,46 @@
+package season;
+import java.io.UnsupportedEncodingException;
+import java.util.Scanner;
+
+public class ConverAsciiValue {
+
+	public static void main(String[] args)  {
+		
+	    Scanner scn = new Scanner(System.in);
+	    
+	    try {
+	    	
+	    System.out.print("Enter string : ");
+	    String name = scn.nextLine();	
+	   
+	     checkString(name);
+	    
+	    int[] array = characterArray(name);
+	    
+	    for(int i=0; i<array.length; i++) {
+	    	System.out.print(array[i]+ " ");
+	    }
+	    
+	    }catch(IllegalArgumentException e) {
+	    	System.out.println(" given valid String  only: ");
+	    }
+	}
+	
+	private static int[] characterArray(String input) {
+		int length = input.length();
+		
+		int[]  asciArray = new int[length];
+		for(int i=0; i<input.length(); i++) {
+			char ch = input.charAt(i);
+			int array = (int) ch;
+			asciArray[i] = array;	
+		}
+		return asciArray;
+	}
+
+	private static void checkString(String str) {
+		 if(!str.matches("[a-zA-Z]+")) {
+			  throw new IllegalArgumentException();
+		 }
+	}
+}

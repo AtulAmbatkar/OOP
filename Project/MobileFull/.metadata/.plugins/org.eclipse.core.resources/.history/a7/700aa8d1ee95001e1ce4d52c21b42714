@@ -1,0 +1,14 @@
+package aa.project.com;
+
+public class Vodafone implements Sim{
+	
+	public String sendSMS(String msg , long mobileNumber) {
+		return " ";
+	}
+	
+	public String dialCall(long mobileNumber) {
+		return " ";
+	}
+	
+	
+}

@@ -1,0 +1,7 @@
+aa.collection.sun.collection;
+
+import java.util.LinkedList;
+
+public class Test05_LinkedListInternally{
+	
+}

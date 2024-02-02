@@ -1,0 +1,5 @@
+package aa.abstraction.allfield;
+
+public class A {
+   int x =50;
+}

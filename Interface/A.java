@@ -1,0 +1,4 @@
+interface A implements SampleTest {
+
+
+}
